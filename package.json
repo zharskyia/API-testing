@@ -1,0 +1,26 @@
+{
+  "name": "api_testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha",
+    "server": "npx json-server-auth http://jsonplaceholder.typicode.com/db"
+    
+    
+  },
+  "keywords": [
+    "api",
+    "testing"
+  ],
+  "author": "Andrii Zharskyi",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.0",
+    "mocha": "^10.2.0"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.4",
+    "json-server-auth": "^2.1.0"
+  }
+}

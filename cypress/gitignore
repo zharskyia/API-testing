@@ -1,0 +1,10 @@
+node_modules
+cypress/videos
+cypress/screenshots
+cypress/results
+cypress/downloads
+allure-results
+allure-report
+screenshots
+videos
+.idea
