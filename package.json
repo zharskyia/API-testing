@@ -1,13 +1,15 @@
 {
   "name": "api_testing",
   "version": "1.0.0",
-  "description": "",
+  "description": "api testing",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha",
-    "server": "npx json-server-auth http://jsonplaceholder.typicode.com/db"
-    
-    
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy.run": "cypress run",
+    "cy.debug": "cypress run --headed --no-exit",
+    "cy.run :allur": "npx cypress run --env allure=true",
+    "allur:generate": "allure generate",
+    "allur:clear": "rd /s /q allure-report allure-results cypress/screenshots cypress/videos"
   },
   "keywords": [
     "api",
@@ -15,12 +17,15 @@
   ],
   "author": "Andrii Zharskyi",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^13.6.0",
-    "mocha": "^10.2.0"
-  },
   "devDependencies": {
-    "json-server": "^0.17.4",
-    "json-server-auth": "^2.1.0"
+    "@faker-js/faker": "^8.3.1",
+    "cypress": "^13.6.0",
+    "@mmisty/cypress-allure-adapter": "^0.15.2",
+    "@shelex/cypress-allure-plugin": "^2.5.0",
+    "allure-commandline": "^2.24.1"
+  },
+  "dependencies": {
+    "json-server-auth": "^2.1.0",
+    "mocha": "^10.2.0"
   }
 }
